@@ -1,0 +1,8 @@
+services:
+  crown-asia:
+    build: .
+    image: crown-asia-projects:latest
+    container_name: crown-asia-projects
+    restart: unless-stopped
+    ports:
+      - "8080:80"
