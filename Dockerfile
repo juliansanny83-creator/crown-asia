@@ -6,6 +6,7 @@ FROM nginx:alpine
 COPY crown-asia-projects.html /usr/share/nginx/html/index.html
 COPY robots.txt /usr/share/nginx/html/robots.txt
 COPY sitemap.xml /usr/share/nginx/html/sitemap.xml
+COPY google68b637d7672cfec2.html /usr/share/nginx/html/google68b637d7672cfec2.html
 
 # nginx:alpine already listens on 80; keep the default config.
 # Health check: the page must return HTTP 200.
