@@ -3,7 +3,9 @@
 FROM nginx:alpine
 
 # The exported page, copied in as the site root document.
-COPY index.html /usr/share/nginx/html/index.html
+COPY crown-asia-projects.html /usr/share/nginx/html/index.html
+COPY robots.txt /usr/share/nginx/html/robots.txt
+COPY sitemap.xml /usr/share/nginx/html/sitemap.xml
 
 # nginx:alpine already listens on 80; keep the default config.
 # Health check: the page must return HTTP 200.
